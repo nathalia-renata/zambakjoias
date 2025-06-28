@@ -1,0 +1,129 @@
+
+body {
+    background-color: LightPink;
+    /* Usa flexbox no body para ajudar a centralizar o conteúdo geral da página */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    align-items: center;   /* Centraliza o conteúdo horizontalmente */
+    min-height: 100vh;   
+    margin: 0;            
+    padding: 20px;         
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+    
+}
+
+h1 {
+    font-size: 5vw; 
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #880E4F; 
+}
+
+.imagem {
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo da imagem */
+    width: 120%; 
+}
+
+img {
+    max-width: 90%; /*tamanho max da imagem*/
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 8px; /*arredonda bordas*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de fundo*/
+    
+}
+.texto1, .texto2, .texto3 {
+    font-size: 3vh; 
+    margin-bottom: 25px; 
+    max-width: 700px; 
+    line-height: 1.6; 
+    text-align:center;
+}
+
+.texto3 {
+    font-family: 'Snell Roundhand', cursive;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.link a {
+    font-size: 3vh; 
+    text-decoration: none; /*retira aquele traço debaixo o texto lincado*/
+    color: white;
+    background-color: #D81B60; 
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    border-radius: 30px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; /* Transição ao passar o mouse por cima */
+}
+
+.link a:hover {
+    background-color: #AD1457; /* Cor mais escura ao passar o mouse em cima */
+}
+
+.contato {
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 25px;
+    color: #000000;
+    font-weight: bold; /*negrito na palavra*/
+}
+
+
+.social {
+    display: flex; /* Usa Flexbox para organizar os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Alinha verticalmente se tiverem alturas diferentes */
+    flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha em telas pequenas */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-bottom: 40px; 
+}
+
+
+.Insta, .fb, .whats {
+    width: 70px; 
+    height: auto; 
+    display: block; 
+    transition: transform 0.2s ease; 
+}
+
+.Insta:hover, .fb:hover, .whats:hover {
+    transform: scale(1.1); /* Aumenta um pouco ao passar o mouse */
+}
+
+/* Para Telas Médias (Tablets e Laptops menores - até 992px) */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 7vw;
+    }
+
+    .texto1, .texto2, .texto3 {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .texto3 {
+        font-size: 1.5rem;
+    }
+
+    .link a {
+        font-size: 1.2rem;
+        padding: 12px 25px;
+    }
+
+    .contato {
+        font-size: 1.6rem;
+    }
+
+    .Insta, .fb, .whats {
+        width: 60px; /* Ícones um pouco menores */
+    }
+}
