@@ -1,2 +1,10 @@
-O intuito desta atividade feita no meu curso de HTML do DevMedia é criar uma página estática, simples e informativa. Onde informa sobre uma loja de jóias , seu site e formas de contato. 
-Você pode ver o resultado visual de como ficou no link a seguir: https://nathalia-renata.github.io/zambakjoias/
+# ⚜️💎 Zambak Joias 
+
+## ✨ Descrição
+
+Atividade proposta no curso de HTML do DevMedia. Página estática, simples e informativa.
+* **Informações destacadas:** sobre a loja, site de origem e contato.
+
+## 📑 Site do Projeto
+
+* https://nathalia-renata.github.io/zambakjoias/
